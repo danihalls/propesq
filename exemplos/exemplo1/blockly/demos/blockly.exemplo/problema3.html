@@ -45,7 +45,7 @@
 
     <br><br><br><br><br><br><br><br><br><br>
     
-    <!DOCTYPE html>
+   <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -69,79 +69,78 @@
   <div align="center">
   <h1><a href="../index.html"> Demos </a> &gt; 
     
-    Exemplos &gt; Exemplo 01 &gt; Loop - level 01</h1>
+    Exemplos &gt; Exemplo 01 &gt; Loop - level 03</h1>
 
   <br><br><br>
   <div id="blocklyDiv" style="height: 500px; width: 800px;">
       <div style="color:red">
-        PROBLEMA: Imprimir os números ímpares entre 20 e 33
+        PROBLEMA: Resolver tabuada de 5
       </div>
   </div>
 
 <xml id="startBlocks" style="display: none">
    <variables>
-    <variable type="" id="UMM_Vr{43P=tMrHt.[G|">i</variable>
+    <variable type="" id="HSa,+8`r:g}(WE.GHUAi">i</variable>
+    <variable type="" id="t1,mqeC|ur2iYkG*MBJQ">N</variable>
+    <variable type="" id="h]#sr{0*wR?tt42zq?hS">item</variable>
+    <variable type="" id="a54aIBHrD,k$^rE=XNP(">{textVariable}</variable>
+    <variable type="" id="1Xz*~Pv1lT+gO4~af!!k">j</variable>
   </variables>
-  <block type="controls_for" id="C,k,@Hhur{rEHD[BdxQY" x="-37" y="13">
-    <field name="VAR" id="UMM_Vr{43P=tMrHt.[G|" variabletype="">i</field>
-    <value name="FROM">
-      <shadow type="math_number" id="5$-y2bX3X1DQ4d+L;[Zh">
-        <field name="NUM">20</field>
-      </shadow>
+  <block type="variables_set" id="OLiK@aKv;rNPW2KBTYQr" x="213" y="88">
+    <field name="VAR" id="t1,mqeC|ur2iYkG*MBJQ" variabletype="">N</field>
+    <value name="VALUE">
+      <block type="math_number" id="]E]R(CxY=[(D%Bj*JY?@">
+        <field name="NUM">5</field>
+      </block>
     </value>
-    <value name="TO">
-      <shadow type="math_number" id="HjbNPg$(}vsQsCmuf5ZH">
-        <field name="NUM">33</field>
-      </shadow>
-    </value>
-    <value name="BY">
-      <shadow type="math_number" id="/`O#LVIGtVi}pb-^x~0`">
-        <field name="NUM">1</field>
-      </shadow>
-    </value>
-    <statement name="DO">
-      <block type="controls_if" id="RtO|a8}VzwHfE9#Qa)./">
-        <value name="IF0">
-          <block type="logic_compare" id="o)V/o|=9Hyh/o.6P:7|R">
-            <field name="OP">NEQ</field>
-            <value name="A">
-              <block type="math_modulo" id="cQ!~md5f$lpsPY=*8G%m">
-                <value name="DIVIDEND">
-                  <shadow type="math_number" id="eeEd%)7*cHpl[u+]{drd">
-                    <field name="NUM">64</field>
-                  </shadow>
-                  <block type="variables_get" id="Z8mNlfB~r)Z`,J-/K9dD">
-                    <field name="VAR" id="UMM_Vr{43P=tMrHt.[G|" variabletype="">i</field>
-                  </block>
-                </value>
-                <value name="DIVISOR">
-                  <shadow type="math_number" id="=hD.BsL?Oe7~mfK##p@[">
-                    <field name="NUM">2</field>
-                  </shadow>
-                </value>
-              </block>
-            </value>
-            <value name="B">
-              <block type="math_number" id="29;$*{HXO[a{-@McfR#M">
-                <field name="NUM">0</field>
-              </block>
-            </value>
-          </block>
+    <next>
+      <block type="controls_for" id="yHl#zxl?:3(mR_ddE,-(">
+        <field name="VAR" id="HSa,+8`r:g}(WE.GHUAi" variabletype="">i</field>
+        <value name="FROM">
+          <shadow type="math_number" id="y%1:gbEP~{[]$SYnaWQn">
+            <field name="NUM">1</field>
+          </shadow>
         </value>
-        <statement name="DO0">
-          <block type="text_print" id="p]qH$BhI5dI(c#xuH)Fm">
+        <value name="TO">
+          <shadow type="math_number" id="#RvUD*1GuC(n#Cj0wPq~">
+            <field name="NUM">10</field>
+          </shadow>
+        </value>
+        <value name="BY">
+          <shadow type="math_number" id="fr_zwqv20[)7`-{r~58?">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="text_print" id="09HX*y!D{`i4gvmM)586">
             <value name="TEXT">
-              <shadow type="text" id="_aT0)0|$m5aI-@s!SHIM">
+              <shadow type="text" id="xsSssOHDDNl=F0!brNX_">
                 <field name="TEXT">abc</field>
               </shadow>
-              <block type="variables_get" id="YU/Uq^W#fi_Bj^rU[w~=">
-                <field name="VAR" id="UMM_Vr{43P=tMrHt.[G|" variabletype="">i</field>
+              <block type="math_arithmetic" id="OH2i`l%tK7;_U13,zR0}">
+                <field name="OP">MULTIPLY</field>
+                <value name="A">
+                  <shadow type="math_number" id="JW7fdCnKlA`,Cv/z#57Z">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id="UVQ:~fs36oF1$$~dsc%-">
+                    <field name="VAR" id="HSa,+8`r:g}(WE.GHUAi" variabletype="">i</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="Yc^FS01UjBQjHbamT/#g">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id=".^Sc9Ik_E{WLcTAl2!4S">
+                    <field name="VAR" id="t1,mqeC|ur2iYkG*MBJQ" variabletype="">N</field>
+                  </block>
+                </value>
               </block>
             </value>
           </block>
         </statement>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
 
@@ -481,9 +480,6 @@
 
 </body>
 </html>
-
-    
-
 
 
 

@@ -45,7 +45,7 @@
 
     <br><br><br><br><br><br><br><br><br><br>
     
-    <!DOCTYPE html>
+   <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -69,79 +69,102 @@
   <div align="center">
   <h1><a href="../index.html"> Demos </a> &gt; 
     
-    Exemplos &gt; Exemplo 01 &gt; Loop - level 01</h1>
+    Exemplos &gt; Exemplo 01 &gt; Loop - level 02</h1>
 
   <br><br><br>
   <div id="blocklyDiv" style="height: 500px; width: 800px;">
       <div style="color:red">
-        PROBLEMA: Imprimir os números ímpares entre 20 e 33
+        PROBLEMA: Encontrar o maior valor entre dois números
       </div>
   </div>
 
 <xml id="startBlocks" style="display: none">
-   <variables>
-    <variable type="" id="UMM_Vr{43P=tMrHt.[G|">i</variable>
+  <variables>
+    <variable type="" id="HSa,+8`r:g}(WE.GHUAi">i</variable>
+    <variable type="" id="t1,mqeC|ur2iYkG*MBJQ">N</variable>
+    <variable type="" id="h]#sr{0*wR?tt42zq?hS">item</variable>
+    <variable type="" id="a54aIBHrD,k$^rE=XNP(">{textVariable}</variable>
+    <variable type="" id="1Xz*~Pv1lT+gO4~af!!k">j</variable>
   </variables>
-  <block type="controls_for" id="C,k,@Hhur{rEHD[BdxQY" x="-37" y="13">
-    <field name="VAR" id="UMM_Vr{43P=tMrHt.[G|" variabletype="">i</field>
-    <value name="FROM">
-      <shadow type="math_number" id="5$-y2bX3X1DQ4d+L;[Zh">
-        <field name="NUM">20</field>
-      </shadow>
+  <block type="variables_set" id="u9$7yzt%Z3Q}0i4d`,H]" x="187" y="-12">
+    <field name="VAR" id="t1,mqeC|ur2iYkG*MBJQ" variabletype="">N</field>
+    <value name="VALUE">
+      <block type="math_number" id="%#t82hg{,q;Cp#Nt16P5">
+        <field name="NUM">-7</field>
+      </block>
     </value>
-    <value name="TO">
-      <shadow type="math_number" id="HjbNPg$(}vsQsCmuf5ZH">
-        <field name="NUM">33</field>
-      </shadow>
-    </value>
-    <value name="BY">
-      <shadow type="math_number" id="/`O#LVIGtVi}pb-^x~0`">
-        <field name="NUM">1</field>
-      </shadow>
-    </value>
-    <statement name="DO">
-      <block type="controls_if" id="RtO|a8}VzwHfE9#Qa)./">
-        <value name="IF0">
-          <block type="logic_compare" id="o)V/o|=9Hyh/o.6P:7|R">
-            <field name="OP">NEQ</field>
-            <value name="A">
-              <block type="math_modulo" id="cQ!~md5f$lpsPY=*8G%m">
-                <value name="DIVIDEND">
-                  <shadow type="math_number" id="eeEd%)7*cHpl[u+]{drd">
-                    <field name="NUM">64</field>
-                  </shadow>
-                  <block type="variables_get" id="Z8mNlfB~r)Z`,J-/K9dD">
-                    <field name="VAR" id="UMM_Vr{43P=tMrHt.[G|" variabletype="">i</field>
-                  </block>
-                </value>
-                <value name="DIVISOR">
-                  <shadow type="math_number" id="=hD.BsL?Oe7~mfK##p@[">
-                    <field name="NUM">2</field>
-                  </shadow>
-                </value>
-              </block>
-            </value>
-            <value name="B">
-              <block type="math_number" id="29;$*{HXO[a{-@McfR#M">
-                <field name="NUM">0</field>
-              </block>
-            </value>
+    <next>
+      <block type="variables_set" id="Iz]uvL7rD/k0d:39-:SC">
+        <field name="VAR" id="HSa,+8`r:g}(WE.GHUAi" variabletype="">i</field>
+        <value name="VALUE">
+          <block type="math_number" id="-nST}CMvU_6iUg1j]MtN">
+            <field name="NUM">4</field>
           </block>
         </value>
-        <statement name="DO0">
-          <block type="text_print" id="p]qH$BhI5dI(c#xuH)Fm">
-            <value name="TEXT">
-              <shadow type="text" id="_aT0)0|$m5aI-@s!SHIM">
-                <field name="TEXT">abc</field>
-              </shadow>
-              <block type="variables_get" id="YU/Uq^W#fi_Bj^rU[w~=">
-                <field name="VAR" id="UMM_Vr{43P=tMrHt.[G|" variabletype="">i</field>
+        <next>
+          <block type="controls_if" id="BI4m^6AAm?=6Rl76y@aU">
+            <value name="IF0">
+              <block type="logic_compare" id="`AvzrS_wRA)=?!_fgm,G">
+                <field name="OP">GT</field>
+                <value name="A">
+                  <block type="variables_get" id="8]aKba)EjIEq!AQIDBQ[">
+                    <field name="VAR" id="t1,mqeC|ur2iYkG*MBJQ" variabletype="">N</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="variables_get" id="+4-}^!+oP^1q^Tm))(yR">
+                    <field name="VAR" id="HSa,+8`r:g}(WE.GHUAi" variabletype="">i</field>
+                  </block>
+                </value>
               </block>
             </value>
+            <statement name="DO0">
+              <block type="text_print" id="T0[%0zr=[i`Zkfi4TT{|">
+                <value name="TEXT">
+                  <shadow type="text" id="z4%Z88xNU7|9~=n`p~()">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                  <block type="variables_get" id="i{^{`mrbiwDST:tW:q:a">
+                    <field name="VAR" id="t1,mqeC|ur2iYkG*MBJQ" variabletype="">N</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id="{c[=UBY8M/?(kyj}tgeC">
+                <value name="IF0">
+                  <block type="logic_compare" id="avNS^gJez%Qd|5c6GdGw">
+                    <field name="OP">GT</field>
+                    <value name="A">
+                      <block type="variables_get" id="MCr`jDy%.gvXD}?WuQnb">
+                        <field name="VAR" id="HSa,+8`r:g}(WE.GHUAi" variabletype="">i</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="variables_get" id="tP}RrAVC9qY}lw=*#JQm">
+                        <field name="VAR" id="t1,mqeC|ur2iYkG*MBJQ" variabletype="">N</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="text_print" id="tdfeY8:pQN8[IvcS+QqX">
+                    <value name="TEXT">
+                      <shadow type="text" id="z4%Z88xNU7|9~=n`p~()">
+                        <field name="TEXT">abc</field>
+                      </shadow>
+                      <block type="variables_get" id="*2_.OKHy:r{C6oz#R.KP">
+                        <field name="VAR" id="HSa,+8`r:g}(WE.GHUAi" variabletype="">i</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </next>
           </block>
-        </statement>
+        </next>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
 
@@ -481,10 +504,6 @@
 
 </body>
 </html>
-
-    
-
-
 
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
